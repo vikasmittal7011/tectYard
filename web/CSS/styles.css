@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.ls-5{
+  letter-spacing: 5px;
+}
+
+.custome-bg-light{
+  background-color: #f3f3f3;
+}
+
+/* Home Page */
+
+/* Nav toggle button */
+
+.fa-bars {
+  font-size: 25px;
+  margin: 2px;
+  color: white;
+}
+
+/* Main welcome content */
+
+.home-bg-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-bg-image img {
+  width: 100%;
+  height: inherit;
+  opacity: 0.8;
+}
+
+.home-bg-image h1 {
+  position: absolute;
+  margin-top: -50px;
+  font-size: 4rem;
+  color: rgb(104, 104, 104);
+  letter-spacing: 10px;
+}
+
+/* Brand info */
+
+.home-brands-info {
+  text-align: center;
+  display: flex;
+}
+
+.home-brands-info div {
+  border: 2px solid rgb(86, 97, 107);
+  border-radius: 30px;
+  display: inline-block;
+  margin: 10px 30px;
+  width: 30%;
+}
+
+.home-brands-info h2 {
+  font-size: 1.8rem;
+}
+
+.home-brands-info img {
+  width: 300px;
+  height: auto;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+.home-brands-info h2 {
+  letter-spacing: 1px;
+}
+
+.product-info-slide-btn {
+  color: black;
+}
+
+/* Product Info */
+
+.home-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-product-info h1 {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+}
+
+.product-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-display div {
+  margin: 10px 18px;
+  text-align: center;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+}
+
+.product-display div h4 {
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.product-display div img {
+  border-radius: 10px;
+  margin: 5px;
+  width: 280px;
+  height: 220px;
+}
+
+/* Application Button */
+
+.home-app {
+  text-align: center;
+}
+
+.home-app button {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.home-app button:focus,
+.home-app button:active {
+  outline: 0;
+}
+
+.home-app button span {
+  font-size: 1.5rem;
+  margin: 2px;
+}
+
+.home-app button .fa-apple {
+  font-size: 1.8rem;
+}
+
+.hide {
+  display: none;
+}
+
+.unhide{
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Registration Page */
+
+.form-container{
+  background-color: #f3f3f3;
+  padding: 1px;
+  letter-spacing: 0;
+}
+
+.form-container form{
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.form-container form div{
+  width: 40vw;
+  margin: auto;
+}
+
+
+/* Login Page */
+
+.login-form{
+  background-color: #f3f3f3;
+  padding: 1px;
+  letter-spacing: 0;
+}
+
+.login-form form{
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+/* About us Page */
+
+.about-owner{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Contact Us Page */
+
+.contact-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+iframe{
+  border-radius: 30px;
+}
+
+.sm-map{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .home-brands-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-brands-info img {
+    width: 220px;
+    height: 110px;
+  }
+
+  .product-display div {
+    margin: 10px 45px;
+  }
+}
+
+@media (max-width: 1175px) {
+  .product-display div {
+    margin: 10px auto;
+  }
+
+  .home-product-info h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .home-app h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-brands-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .home-brands-info img {
+    width: 180px;
+    height: 90px;
+  }
+
+  .home-bg-image h1 {
+    font-size: 3rem;
+  }
+
+  .home-product-info div img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .home-app h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-app button {
+    font-size: 1.4rem;
+  }
+
+  .home-app button span {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1.7rem;
+  }
+
+  .form-container form button{
+    margin: 15px 15px;
+  }
+
+  .login-form form{
+    width: 90%;
+  }
+
+  .contact-details{
+    display: block;
+  }
+}
+
+@media (max-width: 765px) {
+  .home-bg-image h1 {
+    font-size: 2rem;
+  }
+
+  .text-center {
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+  }
+
+  .home-brands-info div img {
+    width: 130px;
+    height: 70px;
+    margin: 10px;
+  }
+
+  .home-brands-info div h2 {
+    font-size: 1.2rem;
+  }
+
+  .home-product-info h1 {
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+  }
+
+  .home-product-info div h4 {
+    font-size: 1.2rem;
+  }
+
+  .home-app h1 {
+    font-size: 1.7rem;
+  }
+
+  .home-app button {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1.6rem;
+  }
+
+  .form-container{
+    letter-spacing: 0;
+  }
+
+  .form-container form{
+    display: block;
+  }
+
+  .form-container form div{
+    width: 80vw;
+  }
+
+  .login-form{
+    letter-spacing: 0;
+  }
+
+  .lg-map{
+    display: none;
+  }
+
+  .sm-map{
+    margin: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 555px) {
+  .text-center {
+    letter-spacing: 0;
+    font-size: 1.7rem;
+  }
+
+  .home-product-info h1 {
+    font-size: 1.7rem;
+    letter-spacing: 0;
+  }
+
+  .home-product-info div h4 {
+    letter-spacing: 0;
+  }
+
+  .home-app h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-app button {
+    font-size: 1.2rem;
+  }
+
+  .home-app button span {
+    font-size: 1.3rem;
+  }
+
+  .home-app button .fa-apple {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-bg-image h1 {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+  }
+
+  .text-center {
+    font-size: 1.4rem;
+  }
+
+  .home-brands-info div {
+    display: block;
+    margin: 5px auto;
+  }
+
+  .home-brands-info div h2 {
+    font-size: 0.6rem;
+  }
+
+  .home-brands-info div img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .home-product-info h1 {
+    letter-spacing: 0;
+    font-size: 1.4rem;
+  }
+
+  .home-product-info div img {
+    width: 120px;
+    height: 80px;
+  }
+
+  .home-product-info div h4 {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+
+  .home-app h1 {
+    font-size: 1.3rem;
+  }
+
+  .home-app button {
+    font-size: 1rem;
+  }
+
+  .home-app button span {
+    font-size: 1rem;
+  }
+
+  .home-app button .fa-apple {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
